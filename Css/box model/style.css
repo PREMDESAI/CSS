@@ -1,0 +1,19 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+#org{
+    background-color: aquamarine;
+}
+#c
+{
+    background-color: blueviolet;
+}
+#p{
+    background-color: violet;
+}
