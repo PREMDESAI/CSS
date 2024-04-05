@@ -1,0 +1,12 @@
+.box{
+    max-height: 100px;
+    border: 1px solid black;
+    max-height: 100px;
+    overflow: auto;
+}
+.hi{
+    border: 1px solid black;
+    margin: 10px;
+    min-height: 100px;
+    min-width: 100px;
+}

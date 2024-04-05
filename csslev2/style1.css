@@ -1,0 +1,21 @@
+h1{
+    text-shadow:3px 3px 3px blue ;
+    
+  
+}
+h2{
+    text-shadow: 3px 3px 3px red, 16px 16px 4px rgb(7, 7, 97);
+}
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 10px red,10px 10px 10px blueviolet;
+    color: green;
+}
+.brdershadow{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px black;
+}
