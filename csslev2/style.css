@@ -1,0 +1,54 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+   
+    background-image:linear-gradient( to right, red,blue);
+}
+.prem{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+    background-image: linear-gradient(to top left,rgb(77, 150, 186),rgb(255, 0, 25),rgb(15, 112, 15));
+
+}
+.hello
+{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+    background-image: linear-gradient(90deg,rgb(229, 223, 223),rgb(157, 165, 214));
+}
+.mydiv{
+    border: 1px solid black;
+    margin: 20px;
+    height: 200px;
+    width: 150px;
+    background-image: radial-gradient(rgb(158, 42, 42),rgb(126, 215, 200),rgb(237, 237, 95));
+}
+.hi{
+    border: 1px solid black;
+    margin: 20px;
+    height: 200px;
+    width: 150px;
+    background-image: radial-gradient(yellow 25%,blue 30%,red 40%);
+}
+.con{
+    border: 1px solid black;
+    margin: 20px;
+    height: 200px;
+    width: 150px;
+    background-image: conic-gradient(rgb(252, 132, 132) ,rgb(125, 125, 205) ,rgb(134, 224, 142));
+     
+
+}
+.flag{
+    border: 1px solid black;
+    margin: 20px;
+    height: 200px;
+    width: 250px;
+    background-image: linear-gradient(to bottom,rgb(225, 162, 46) ,rgb(241, 225, 225),rgb(21, 123, 21) );
+}
