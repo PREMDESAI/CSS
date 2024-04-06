@@ -1,0 +1,28 @@
+div{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+    display: inline-block;
+}
+#b4{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+#b2{
+    
+}
+#h{
+    height: 1000px;
+    width: 100vw;
+    background-color: yellow;
+}
+#b3{
+    position: relative;
+}
+#b5{
+    position: sticky;
+    top: 0px;
+
+}
