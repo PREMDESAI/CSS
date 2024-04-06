@@ -1,0 +1,16 @@
+.a{
+    background-color: aqua;
+    transform: translate(100px ,100px);
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg);
+    
+}
+.b{
+    background-color: blueviolet;
+    transform: skew(-20deg);
+    padding: 10px;
+    margin: 200px;
+    height: 100px;
+    width: 100px;
+}
