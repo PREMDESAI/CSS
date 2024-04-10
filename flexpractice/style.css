@@ -30,3 +30,30 @@
   
     
  }
+ .b{
+    border: 2px solid black;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;    
+ }
+ .r{
+    border: 1px solid gold;
+    height: 40px;
+    width: 40px;
+   
+
+ }
+ #z{
+      order:7;
+      flex-grow: 1;
+ }
+ #x{
+     order: 5;
+     align-self: stretch;
+ }
+ #c{
+     order: 4;
+     flex-grow: 1;
+     align-self: flex-start;
+ }
