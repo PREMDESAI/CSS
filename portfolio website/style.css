@@ -260,4 +260,200 @@ a{
         left: 48%;
     }
   }
- 
+  .projectsection{
+     background-color:rgb(231,231,231);
+     margin-top: 4rem;
+
+  }
+  .projectheading{
+    color: var(--bgOrange);
+    font-size: 90px;
+    text-align: center;
+    padding-top:30px ;
+  }
+  .projectcontainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap:120px;
+  }
+  .projectcard{
+    width: 90%;
+    height: 550px;
+    background-image: url(Project2.png);
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+  
+  }
+  .projectcard::after{
+     content: "";
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color:#1f1f1f9a ;
+     z-index: 0;
+  }
+  .projectcard::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+   transform: scaleX(0);
+   transform-origin: left;
+   transition: 0.4s;
+   z-index: 1;
+  }
+  .projectcard:hover::before{
+    transform: scaleX(1);
+
+  }
+  .projectnumber {
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: rgb(255,255,255);
+    z-index: 10;
+    display: none;
+  }
+  .projectcard:hover .projectnumber{
+    display: block;
+    transition: 1s;
+  }
+  .projectnumber1{
+    right: -40px;
+    top:-45px;
+
+  }
+  .projectnumber2{
+    left: -40px;
+    top: -45px;
+  }
+  .projectcontent{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition:all 0.4;
+  }
+  .projectcontentleft{
+    left: 10%;
+  }
+  .projectcontentright{
+    right: 10%;
+  }
+  .projectskillscontainer{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .projectskill{
+    width: 40px;
+  }
+  .projectheading2{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+  }
+.projectsubheading{
+  width: 70%;
+  font-size: 16px;
+  font-style: italic;
+} 
+.buttongroup{
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.photo{
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+}
+.projectcard:hover .projectcontent{
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+#project1{
+  background-image: url(Project1.png);
+}
+#project2{
+  background-image: url(Project2.png);
+  margin-left: 120px;
+}
+#project3{
+  background-image: url(Project3.png);
+}
+#project4{
+  background-image: url(Project4.png);
+  margin-left: 120px;
+}
+@media (max-width:1300px) {
+  .projectheading {
+    padding-top: 30px;
+    color: var(--bgOrange);
+    text-align: center;
+    font-size: 40px;
+  }
+  .projectcontainer{
+    padding: 5px;
+    margin: 10px;
+    gap: 60px;
+  }
+  .projectcard {
+    width: 100%;
+    height: 300px;
+  }
+  .projectcard {
+    background-size: cover;
+    background-position: center;
+  }
+  .projectcontent {
+    scale: 0.5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .projectcontentleft{
+    left: 0;
+  }
+  .projectheading2 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .projectsubheading {
+    width: 100%;
+  }
+  #project2 {
+    margin-left: 0;
+  }
+  #project4 {
+    margin-left: 0;
+  }
+  .projectskillscontainer {
+    width: 100%;
+  }
+  .projectskill {
+    width: 35px;
+  }
+  .projectcard:hover .projectnumber {
+    display: none;
+  }
+  .projectcard:hover .projectcontent {
+    scale: 0.55;
+  }
+}
+
