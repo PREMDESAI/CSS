@@ -1,106 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ecf0f1;
-  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  padding: 10px;
 }
 
-img {
-  max-width: 100%;
+.testimonial-container {
+  background-color: #476ce4;
+  color: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
 }
 
-.card {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 350px;
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
 }
 
-.card-header {
-  height: 200px;
+.fa-quote-right {
+  left: 40px;
 }
 
-.card-header img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+.fa-quote-left {
+  right: 40px;
 }
 
-.card-content {
-  background-color: #fff;
-  padding: 30px;
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
 }
 
-.card-title {
-  height: 20px;
-  margin: 0;
-}
-
-.card-excerpt {
-  color: #777;
-  margin: 10px 0 20px;
-}
-
-.author {
+.user {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.profile-img {
+.user .user-image {
   border-radius: 50%;
-  overflow: hidden;
-  height: 40px;
-  width: 40px;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
 }
 
-.author-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.user .user-details {
   margin-left: 10px;
-  width: 100px;
 }
 
-.author-info small {
-  color: #aaa;
-  margin-top: 5px;
-}
-
-.animated-bg {
-  background-image: linear-gradient(
-    to right,
-    #f6f7f8 0%,
-    #edeef1 10%,
-    #f6f7f8 20%,
-    #f6f7f8 100%
-  );
-  background-size: 200% 100%;
-  animation: bgPos 1s linear infinite;
-}
-
-.animated-bg-text {
-  border-radius: 50px;
-  display: inline-block;
+.user .username {
   margin: 0;
-  height: 10px;
-  width: 100%;
 }
 
-@keyframes bgPos {
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
   0% {
-    background-position: 50% 0;
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
   }
 
-  100% {
-    background-position: -150% 0;
+  .fa-quote {
+    display: none;
   }
 }
