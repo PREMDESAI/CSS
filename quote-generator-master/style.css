@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.125rem;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.5s ease-in;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.65;
+}
+
+/* #quotesSelector {
+    width: 40%;
+    max-width: 500px;
+    padding: .2em;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -20%);
+    z-index: 1;
+    background: transparent;
+    background-color: #242529;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("/images/dropdown-icon.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - .5em);
+    background-position-y: .4em;
+}
+
+#quotesSelector::after {
+    content: '';
+    transform: translateY(20px);
+} */
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    padding: 2.2em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: inset 4px -3px 20px 0px rgb(39, 37, 37);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.5s ease-in;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia;
+    font-weight: 700;
+    margin: .4em 0 0 0;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    width: 4.1em;
+    height: 5px;
+    border-radius: 3px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 826px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+blockquote {
+    color: white;
+    width: 100%;
+    margin: 1.2em auto;
+    font-size: 1.44rem;
+    font-weight: 400;
+    font-style: italic;
+    background: rgb(0, 0, 0, 0.4);
+}
+
+@media (max-width: 826px) {
+    blockquote {
+        font-size: 1.3rem;
+        margin: 2.4em auto .7em auto;
+    }
+}
+
+/* @media (max-height: 1366px) {
+    #quotesSelector {
+        top: 20%;
+    }
+} */
+
+@media (max-height: 600px) {
+    blockquote{
+        font-size: 1rem;
+    }
+}
+
+.quote-author {
+    display: block;
+    float: right;
+    position: relative;
+}
+
+.quote-author::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    background-color: white;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 3em 0 0 0;
+}
+
+.button-row button {
+    padding: .67em 1.2em;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(95, 91, 91);
+    background-color: rgb(24, 22, 22);
+    color: white;
+    cursor: pointer;
+}
+
+.button-row button:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    background: white;
+}
+
+.tweet-button img {
+    width: 20px;
+}
+
+@media (max-width: 912px) {
+    .button-row {
+        margin-top: 3em;
+    }
+
+    .quote-author {
+        margin: 0;
+    }
+/* 
+    #quotesSelector {
+        width: 60%;
+        top: 20%;
+    } */
+}
+
+@media (max-width: 637px) {
+    .button-row {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 80%;
+        padding: 1.5em;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .button-row button {
+        width: 50%;
+    }
+
+    blockquote {
+        font-size: 1rem;
+    }
+/* 
+    #quotesSelector {
+        top: 7%;
+    } */
+}
+
+@media (max-width: 450px) {
+    .button-row button {
+        font-size: 1rem;
+    }
+
+    .tweet-button img {
+        width: 15px;
+    }
+
+    .tweet-button span{
+        font-size: 1rem;
+    }
+
+    /* #quotesSelector {
+        width: 70%;
+    } */
+}
+
+@media (max-width: 390px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .button-row button {
+        width: 70%;
+    }
+}
+
+/* @media (max-width: 375px) {
+    #quotesSelector {
+        top: 4%;
+    }
+} */
